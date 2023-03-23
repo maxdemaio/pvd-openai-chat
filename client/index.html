@@ -16,15 +16,34 @@
 
     <!-- code goes below -->
     <main class="grow flex flex-col items-center justify-center">
-        <h1 class="text-center text-2xl mt-5 font-bold my-4">CodeSnippet.io Project Template</h1>
-        <section>
-            <form id="name-form" class="flex space-x-2">
-                <div>
-                    <label for="name" class="sr-only">Your name</label>
-                    <input id="name" type="text" name="name" class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="What's your name?">
-                </div>
-                <button type="submit" class="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
-            </form>
+        <h1 class="text-center text-2xl mt-5 font-bold my-4">OpenAI Chat API</h1>
+        <h2 class="text-center text-xl mt-5 my-4">Customer Support</h2>
+        <section class="dialogue-section w-full max-w-3xl border-2 border-gray-200 rounded-md p-4 h-96 overflow-scroll">
+            <ul id="dialogue" class="flex flex-col space-y-4">
+                <li class="bg-gray-100 rounded p-2 w-fit self-start break-words">
+                        Hi there 👋 I can help you with your support questions!
+                </li>
+            </ul>
+        </section>
+        <section class="prompt-section my-4 w-full max-w-3xl">
+            <div class="prompt-input-section flex flex-col">
+                <form id="prompt-form">
+                    <label for="prompt-input" class="block text-gray-700 text-sm font-bold mb-2">Enter your support
+                        question</label>
+                    <textarea
+                              id="prompt-input"
+                              name="prompt"
+                              cols="38"
+                              rows="3"
+                              placeholder="The item I purchased is broken. How do I receive a refund?"
+                              class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-3 text-gray-700"
+                              ></textarea>
+                    <button type="submit"
+                            class="my-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                        Send
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
     <!-- code goes above-->
