@@ -1,8 +1,8 @@
 {
-  "name": "project-template",
+  "name": "pvd-openai-chat",
   "version": "1.0.0",
-  "description": "How to use the Project Template",
-  "author": "codesnippet.io",
+  "description": "ChatGPT Chat Bot",
+  "author": "maxdemaio",
   "main": "server/main.js",
   "type": "module",
   "scripts": {
@@ -11,15 +11,7 @@
     "start": "node server/main.js",
     "dev": "nodemon server/main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeSnippetHQ/project-template.git"
-  },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodeSnippetHQ/project-template/issues"
-  },
-  "homepage": "https://github.com/CodeSnippetHQ/project-template#readme",
   "dependencies": {
     "body-parser": "1.20.1",
     "dotenv": "16.0.3",
